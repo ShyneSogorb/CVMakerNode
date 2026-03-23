@@ -1,0 +1,267 @@
+/* =========================
+   Base
+   ========================= */
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
+  font-size: 10.2pt;
+  line-height: 1.35;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* =========================
+   Page layout
+   ========================= */
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 17mm 18mm 15mm 18mm;
+}
+
+/* =========================
+   Header
+   ========================= */
+
+.header {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.name {
+  margin: 0;
+  font-size: 22pt;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: #111111;
+}
+
+.role {
+  margin: 3px 0 0 0;
+  font-size: 11pt;
+  font-weight: 400;
+  color: #4a4a4a;
+  line-height: 1.2;
+}
+
+/* =========================
+   Summary
+   ========================= */
+
+.summary {
+  margin: 8px 0 10px 0;
+  font-size: 10pt;
+  line-height: 1.4;
+  color: #1c1c1c;
+}
+
+/* =========================
+   Sections
+   ========================= */
+
+.section {
+  margin-top: 9px;
+}
+
+.section-title {
+  margin: 0 0 5px 0;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #444444;
+  font-size: 9.5pt;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+/* =========================
+   Experience
+   ========================= */
+
+.job {
+  margin: 0 0 7px 0;
+}
+
+.job-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin-bottom: 1px;
+}
+
+.job-date {
+  font-size: 8.8pt;
+  color: #5a5a5a;
+  white-space: nowrap;
+}
+
+.job-title {
+  margin: 0;
+  font-size: 10pt;
+  font-weight: 700;
+  color: #111111;
+}
+
+.job-company {
+  margin: 1px 0 3px 0;
+  font-size: 9pt;
+  font-style: normal;
+  color: #444444;
+}
+
+ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+li {
+  margin: 0 0 2px 0;
+  padding: 0;
+  font-size: 9.6pt;
+  line-height: 1.35;
+  color: #161616;
+}
+
+/* =========================
+   Skills
+   ========================= */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skills span {
+  display: inline-block;
+  padding: 2px 7px;
+  border: 1px solid #b7b7b7;
+  border-radius: 3px;
+  background: #fafafa;
+  color: #1a1a1a;
+  font-size: 9pt;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* =========================
+   Languages
+   ========================= */
+
+.row {
+  margin: 0 0 3px 0;
+  font-size: 9.5pt;
+  line-height: 1.25;
+  color: #1a1a1a;
+}
+
+.row strong {
+  font-weight: 700;
+  color: #111111;
+}
+
+.StarLevel {
+  display: inline-block;
+  margin-left: 0;
+  font-size: 9pt;
+  line-height: 1;
+  color: #555555;
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   Education
+   ========================= */
+
+.edu {
+  margin: 0 0 6px 0;
+  font-size: 9.5pt;
+  line-height: 1.3;
+  color: #1a1a1a;
+}
+
+.edu strong {
+  display: inline-block;
+  margin-bottom: 1px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.muted {
+  color: #555555;
+}
+
+/* =========================
+   Footer / contact
+   ========================= */
+
+footer {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #d0d0d0;
+}
+
+.contact {
+  font-size: 8.8pt;
+  line-height: 1.35;
+  color: #444444;
+  word-break: break-word;
+}
+
+.contact span {
+  white-space: nowrap;
+}
+
+/* =========================
+   Print safety
+   ========================= */
+
+.page,
+.section,
+.job,
+.edu,
+.summary {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+ul {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+li {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}

@@ -1,0 +1,4 @@
+{
+  "watch": ["templates", "data", "styles", ".", "scripts"],
+  "ext": "js,json,ejs,css"
+}

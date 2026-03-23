@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= name %></title>
+  <style><%= css %></style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1 class="name"><%= name %></h1>
+    <h2 class="role"><%= role %></h2>
+
+    <!-- CONTACT (movido arriba para ATS) -->
+    <div class="contact">
+      <span><%= email %></span> |
+      <span><%= Phone %></span> |
+      <span><%= location %></span><br>
+
+      <% if (linkedIn) { %>
+        <span><%= linkedIn %></span>
+      <% } %>
+
+      <% if (webpage) { %>
+        | <span><%= webpage %></span>
+      <% } %>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    <%= summary %>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">PROFESSIONAL EXPERIENCE</div>
+
+    <% experience.forEach(job => { %>
+      <div class="job">
+
+        <div class="job-header">
+          <div class="job-date">
+            <%= job.date[0] %> - <%= job.date[1] %>
+          </div>
+        </div>
+
+        <div class="job-title">
+          <%= job.title %>
+        </div>
+
+        <div class="job-company">
+          <%= job.company %>
+        </div>
+
+        <ul>
+          <% job.points.forEach(p => { %>
+            <li><%= p %></li>
+          <% }) %>
+        </ul>
+
+      </div>
+    <% }) %>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">TECHNICAL SKILLS</div>
+
+    <div class="skills">
+      <% skills.forEach(s => { %>
+        <span><%= s %></span>
+      <% }) %>
+    </div>
+  </div>
+
+  <!-- LANGUAGES (texto en vez de estrellas) -->
+  <div class="section">
+    <div class="section-title">LANGUAGES</div>
+
+    <% Languages.forEach(l => { %>
+      <div class="row">
+        <strong><%= l.Lang %></strong>:
+        <span>
+          <%= l.Level %>
+        </span>
+      </div>
+    <% }) %>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">EDUCATION</div>
+
+    <% Education.forEach(e => { %>
+      <div class="edu">
+        <strong><%= e.Degree %></strong><br>
+        <%= e.Major %><br>
+        <span class="muted"><%= e.School %></span>
+      </div>
+    <% }) %>
+  </div>
+
+  <!-- MORE -->
+  <div class="section">
+    <div class="section-title">ADDITIONAL INFORMATION</div>
+
+    <ul>
+      <% More.forEach(m => { %>
+        <li><%= m %></li>
+      <% }) %>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
