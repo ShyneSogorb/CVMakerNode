@@ -1,0 +1,260 @@
+{
+
+  "COMMENT":"This holds the structure for the data to generate to improve ats success probability. Feel free to modify tone to match the position",
+
+  "name": "Kingsley Shyne Mattis Sogorb",
+  "role": "*Something relevant for this position*",
+  "email": "shyne2003@gmail.com",
+  "location": "Villena, Valencian Community, Spain",
+
+  "webpage_COMMENT":{
+    "tool_tip":"If the position is not programming oriented do not include it"
+  },
+  "webpage": "https://shynesogorb.github.io/webpage/",
+  "Phone": "+34 664 16 10 72",
+  
+  "linkedIn_COMMENT":{
+    "tool_tip":"If the position is not programming oriented do not include it"
+  },
+  "linkedIn": "https://linkedin.com/in/kingsley-shyne-mattis-sogorb-a4a898214",
+
+  "github": "",
+
+  "summary": "*summary optimized for the position*",
+  "skills_COMMENT":{
+    "tool_tip":"Add skills relevant to the position and bullet points for the ats.",
+    "skills_details":{
+      "tool_tip":"use these as idea of my skills and level to determine if is worth it to mention it, or not depending on the role and my info. More can be extracted if needed from experience achivements",
+      "skills":[
+        "Unreal engine. Been working with it since I was 13 back in 2018",
+        "C++. Main focused in unreal engine since 2021",
+        "Blueprint. Main use of unreal since the start",
+        "Blueprint widget. Created dynamic widgets for the player such main menu, options settings and even data-driven generated widgets",
+        "User Interaction. Interaction of the player with the world around, doors, switches, computers, etc",
+        "Editor tooling (in unreal). Created custom tools in unreal engine with exposion to developers to speed up their workflow",
+        "Debugging. Look to stack, traces, values and memory. Done it in Unreal Engine, visual studio, visual studio code, jetbrains rider, and CLion",
+        "Version control. more details nextr",
+        "Perforce. Local version control of projects and server alocated version control with AWS",
+        "Git. Used for minor projects like cv maker, unreal batch compiler for many projects, also during my education implemented it with unity and also allocating my custom game engine in github",
+        "Pipeline automation, created many scripts and small apps to speed up tedious process that were encountered. Such as data-driven cv generation, or image resize",
+        "Reflection. Unreals reflection to find variables exposed and read/write runtime",
+        "Python. Used for many external tools such image resize, file converter, audio modification, video audio extractor, unreal multiplatform compiling, etc",
+        "Technical UX. By exposing variables and settings to other members so they can work more freely",
+        "Optimization. By avoiding unnecessary heavy operations like realloc, heavy copies and helping the compiler optimize",
+        "Mutithreading. Using multiple threads to move heavy work off the main thread",
+        "Memory Management. By knowing expected life cycles for classes and structs",
+        "Developed modular gameplay systems supporting flexible player interaction and control-driven mechanics.",
+        "Implemented real-time configuration systems allowing rapid tuning of gameplay parameters affecting player experience.",
+        "Built UI systems enabling immediate feedback and iteration on player-facing mechanics.",
+        "Low level error handling. Created an abort system for the lazy-evaluation graph, all variables are wrapped by a handler and linked to a custom deletion stack where when an error is met, uses longjmp to exit, then the stack flushes releasing memory of non-trivial constructors. Avoiding double delete, memory leak and handling normal stack destruction",
+        "Cache efficiency. Been working with arrays, and chunked arrays for massive data processing. Also SoA c++ templates",
+        "Lock-free programming. Used atomics for multithreaded functionallity as well as atomic queues, and buffers",
+        "SIMD. Used moving millions of bullets in real-time in a soa structure taking advantage of alignments",
+        "Unreal's Subsystems. With a world subsystem bullet pool for fast spawn/despawn",
+        "Template metaprogramming. Widely used for a dynamic type tag templates such as SoA structure, allocators, wrappers, and generic behaviour with compile-time resolution in some cases",
+        "Data oriented design. With generation and behaviour based on prebuilt data",
+        "System architecture. With the planning of many features requiring a robust architecture as well as public API",
+        "Low-level systems. Creating systems that runs logic in low level to expose an API, using many raw features as static array, type reinterpretation, bit-packing, bit-flags, and bit logic operations",
+        "Gameplay programming. Implementing mechanics for the player to play with like shooting, climbing, interacting and world reaction",
+        "Player mechanics. With players control and habilities implementation to co-work with gameplay mechanichs",
+        "Combat systems. Range and melee weapons, with reactive impacts, advanced AI, dismemberment and traps",
+        "AI Behaviour. Faction based NPCs with each strengths and weakness, melee only enemies, long range enemies that take cover and try to flank their adversary",
+        "Game feel. Creating player interaction with the world, weapons and enemies",
+        "Animation integration. Synchronizing players and characters animations with action, also using animation events to trigger logic actions",
+        "Physics interaction. By giving the player the oportunity to interact with the world, physics constrained simulated doors, hanging lamps, grabing boxes and sliding heavy slide doors",
+        "Camera systems. With chamera reactions to world events as heavy shakes, damage, hit, deorientation and more screen-fx",
+        "World interaction. Creating a feeling world that reacts to event, like lights malfunctions and swinging to shockwaves or being destroyed by impacts and more",
+        "3C Programming. Giving the player a feeling of weight, yet fast and agile, camera reaction to movement and realistic control over the movement",
+        "Input System. Managed players input to react acordly to what is happening in game, meaning diferent actions depening on is walking, is using a computer, is beeing grabbed",
+        "Unity, during the specialization course made with the rest of the class a turn-base, top-down medieval-war game. As well as many small projects during the interndship",
+        "C#. Used with unity",
+        "Node.js teached during higher vocational training and built two websites during with course. One a restaurant webpage with login and reservation database, other final project of a game developer web with a database for users, games and in game-data, wish-lists",
+        "React used for the second webpage to generate based on data",
+        "MySql teached and very used in those webpages",
+        "MongoDb also used inside the final project of the game company webpage",
+        "Javascript, for both node and front end, user action reactions, data validation and content fetch",
+        "Python, used for tools for myself and external tools, like plugin compiler, online downloading",
+        "Java. Teached during first year of web development and worked with serialization, objects, interfaces and error handling",
+        "Independent. Used to work alone, find problems alone, and find solutions to those problems alone. Still reporting when must",
+        "Good self lerner. Learned more on my own than in class, and usually develop well to new things",
+        "Calm and patient. Maybe too much \"sin sangre\" but lets focus on not being impulsive",
+        "Particles effects. Made close to a hundred visual effects with Niagara in unreal (no making textures, just using existing), from candle fire, to explosions, lighning, smoke, volumetric efects, trails, portals, etc",
+        "Material effects. In unreal created from realistic materials to vfx, both surface and post-process. And master materials that allows 99% of materials to derive from it",
+        "Dog physical-care. Feed, water and medicating dogs at the shelter",
+        "Dog mental-care. Know each dog and their behaviour to treate them the best possible way, knowing their like, dislikes, dogs that they befriend and how they like and not to play",
+        "Dog training. Mentally help dogs with some training to better understand humans and better express themselves, also showing teaching them there are humans that will love them",
+        "Cleaning and desinfecting. Cleaning dog wastes from each cage and yard. Also desinfecting me and my tools after cleaning a cage of a sick dog"
+      ]
+    }
+  },
+  "skills": [
+    "Skills extracted from skills_details"
+  ],
+
+  "achivements_COMMENT":{
+    "tool_tip":"This will be just information to extract and insert into the points as an array of strings of the said position",
+    "achivements":[
+    ]
+  },
+
+  "projects_COMMENT":{
+    "tool_tip":"These are things I've made with no proffit in mind either for me or for test. Experience can be added here if may feel better for the position (e.g. they dont want much experience but rather people that do things and can demonstrate but not experience per-se). This is optional and can be removed if only removes points for irrelevance"
+  },
+  "projects":[
+    {
+      "name":"Chimera Engine",
+      "description":"",
+      "achivements":[
+        "Created a desktop app with c++",
+        "Used vulkan as a renderer",
+        "Abstracted through interfaces making codding per modules more independant",
+        "Worked with low-level C APIs",
+        "Used CMake for the project build"
+      ]
+    }
+  ],
+
+  "experience_COMMENT":{
+    "tool_tip":"Experience relevant to the position. Skip not relevant and prioritize best matches. For example, for a cleaning position all progamming experience is noise that removes me points. As well as a programming position the dog-care-taker is noise. In more general programming maybe may be more focus of the technicall achivements ina a more generic way than giving relevance to the fact the programing was videogame oriented",
+    "company": "Can be personal projects, or at an indie team \"Avtrix games\" where i did not get paid and worked only with a designer. Or Develish where i was as Intern",
+    "points": "Focus on the most relevant points for the position and try to match as many keywords as possible"
+  },
+
+  "experience": [
+    {
+      "title": "Plugin Developer (Unreal Engine)",
+      "date": [2024, "Present"],
+      "company": "Solo",
+      "achivements":[
+        "Data-driven UMG UI for weapon customization. A data-asset contains all info about a modular weapon, its name, its slots, and each slot's modificator, with a runtime preview, hover data context display",
+        "Dropdown generated from the weapon data, generating as many dropdowns as slots the weapon has, which each slot's modificator as option",
+        "Designed and implemented custom Unreal Engine editor tooling for data-driven content workflows and modular asset configuration.",
+        "Built reflection-based systems and custom details panels to expose complex data in a more usable form for designers and artists.",
+        "Created editor/runtime separation patterns and shipping-optimized data layouts to keep tools flexible in editor while minimizing runtime overhead.",
+        "Developed workflow-oriented UI and preview systems to improve iteration speed and reduce manual setup work.",
+        "Designed and implemented a modular weapon system using node-based architecture with lazy evaluation for efficient execution.",
+        "Built data-driven systems enabling flexible configuration and reuse across different gameplay scenarios.",
+        "Separated editor-only and runtime data to optimize memory usage and improve performance in shipping builds.",
+        "Implemented reflection-based systems with delegate-driven updates to maintain extensibility and low coupling.",
+        "Developed reusable system components adaptable to multiple gameplay contexts.",
+        "Developed a modular weapon system supporting multiple weapon types, attachments, and gameplay behaviors.",
+        "Implemented node-based logic to control weapon behavior, enabling flexible gameplay configuration and rapid iteration.",
+        "Designed gameplay systems with dynamic parameter control allowing designers to tweak mechanics without code changes.",
+        "Integrated UI systems for real-time weapon configuration and gameplay preview."
+      ],
+      "points": []
+    },
+
+
+    {
+      "title": "Systems and Mechanics Programmer at Avtrix Games (Unreal Engine)",
+      "date": [2019, 2024],
+      "company": "Avtrix Games (Indie)",
+      "achivements":[
+        "Developed UMG-based UI elements including pause menus, death screens, and options menus.",
+        "Integrated UI feedback with gameplay systems to reflect player state and interactions.",
+        "Exposed gameplay data to UI systems enabling real-time updates and interaction-driven feedback.",
+        "Collaborated with designers by structuring gameplay data for easier UI representation and control.",
+        "Supported UI usability by improving parameter exposure and interaction clarity.",
+        "Implemented a wide range of gameplay and editor-facing systems, including modular interaction, weapon configuration, and character-environment workflows.",
+        "Built data-driven content pipelines exposing gameplay parameters to non-programmers for faster tuning and iteration.",
+        "Automated repetitive production tasks with Python scripts for batch processing such as texture resizing and filtering.",
+        "Developed custom FX and material setups, plus tools-oriented exposure of parameters to support artists during production.",
+        "Worked on technical systems with modular design to improve maintainability, reuse, and scalability across content-heavy features.",
+        "Developed core gameplay systems including AI behaviors, faction logic, interaction systems, and modular combat frameworks.",
+        "Implemented a high-performance ballistic subsystem using data-oriented design (SoA), static pooling, and batch processing.",
+        "Designed systems supporting SIMD execution and multithreading to scale performance under heavy load.",
+        "Built explosion and melee systems with configurable precision and asynchronous processing to reduce main thread overhead.",
+        "Implemented modular damage systems supporting environmental effects and dynamic behavior changes.",
+        "Applied performance optimization techniques including memory reuse, reduced allocations, and cache-friendly layouts."
+      ],
+      "points": []
+    },
+
+
+    {
+      "title": "Gameplay Programmer Intern at Devilish Games (Unity)",
+      "date": [2023, 2023],
+      "company": "Devilish Games (Indie)",
+      "achivements":[
+        "Implemented UI elements for gameplay prototypes focused on player interaction and feedback.",
+        "Developed simple UI systems for mobile gameplay with emphasis on clarity and responsiveness.",
+        "Developed gameplay prototypes with custom movement and mathematical control systems for mobile projects.",
+        "Implemented mechanics involving 3D/2D hybrid interaction, precision-based control, and gravity-driven race concepts.",
+        "Built fast-iteration prototype systems to validate mechanics and support early production decisions.",
+        "Implemented gameplay systems using mathematical models for precise control and behavior tuning.",
+        "Developed custom gravity systems enabling dynamic multi-body interaction and traversal.",
+        "Focused on building flexible systems for rapid iteration and validation.",
+        "Implemented parkour and traversal systems including climbing and movement over complex geometry.",
+        "Developed combat systems with multiple weapon types, modifiers, and interaction behaviors.",
+        "Built AI behaviors for different enemy archetypes including melee units, ranged soldiers, heavy units, drones, and stealth entities.",
+        "Designed faction systems driving dynamic interactions between enemies, allies, and neutral characters.",
+        "Implemented environmental interaction systems including doors, generators, cameras, switches, and physics-based objects.",
+        "Developed damage systems including dismemberment, partial limb destruction, and behavior changes based on damage state.",
+        "Created environmental hazards such as fire, radiation, acid, and physics-based traps affecting gameplay."
+
+      ],
+      "points": []
+    },
+
+
+    {
+      "title": "Games Prototype Programmer Intern at Devilish Games (Unity)",
+      "date": [2021, 2021],
+      "company": "Devilish Games (Indie)",
+      "achivements":[
+        "Created experimental gameplay prototypes to explore movement, parkour, and interaction mechanics.",
+        "Implemented prototype logic designed for rapid iteration and mechanics validation.",
+        "Developed gameplay prototypes with unique mechanics including hybrid 2D/3D interaction systems.",
+        "Implemented precision-based control systems for mobile gameplay using mathematical models.",
+        "Created a planetary racing prototype with custom gravity systems and multi-surface traversal."
+      ],
+      "points": []
+    }
+
+
+  ],
+  "Education_COMMENT":{
+    "tool_tip": "Done in spain and may not have direct equivalent internationally but must still be reflected",
+    "options":[
+      "Curso de especialización",
+      "Formación profesional de grado superior",
+      "Formación profesional de grado medio"
+    ]
+  },
+  "Education": [
+    {
+      "School": "IES Poeta Paco Mollà",
+      "Degree": "Specialization",
+      "Major": "Game Development And Virtual Reality"
+    },
+    {
+      "School": "IES Hermanos Amorós",
+      "Degree": "Higher National Diploma",
+      "Major": "Web Application Development"
+    },
+    {
+      "School": "IES Hermanos Amorós",
+      "Degree": "Intermediate Vocational Training Diploma",
+      "Major": "Microcomputer Systems and Networks"
+    }
+  ],
+  "Languages_COMMENT":{
+    "tool_tip":"Technically I speak valencian, not catalan so for positions out of spain should use Catalan, inside spain, Valencian"
+  },
+  "Languages": [
+    { "Lang": "Spanish", "Level": "Native" },
+    { "Lang": "English", "Level": "Fluent" },
+    { "Lang": "Catalan", "Level": "Fluent" },
+    { "Lang": "German", "Level": "Basic" },
+    { "Lang": "Polish", "Level": "Basic" }
+  ],
+  "More_COMMENT":{
+    "tool_tip":"If the position may come handy something special, like game development where creativity is handy or may like a swordman for sword game."
+  },
+  "More": [
+    "Volunteer dog caretaker and trainer, fostering responsibility, patience, and teamwork.",
+    "Experienced medieval swordsman, disciplined and focused.",
+    "Writer in free time, focused on storytelling and world-building."
+  ]
+}

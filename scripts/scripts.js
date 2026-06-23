@@ -1,8 +1,25 @@
 import fs from "fs";
 
-export function GetAllFiles(Src){
-    return fs.readdirSync(Src, {recursive: true});
+export class DataFile{
+    constructor(File){
+        const FileFormat = File.split(".");
+        this.Name = FileFormat[0];
+        this.Lang = FileFormat[1];
+        this.Format = FileFormat[2];
+    }
+
+    Path(){
+        return `${this.Name}.${this.Lang}.${this.Format}`
+    }
 }
+
+export function GetAllFiles(Src){
+    return fs.readdirSync(Src, {recursive: true}).map(f=> new DataFile(f));
+}
+
+// export function GetAllFiles(Src){
+//     return fs.readdirSync(Src, {recursive: true});
+//}
 
 export function GetAllFilesNameOnly(Src) {
     const data = GetAllFiles(Src);

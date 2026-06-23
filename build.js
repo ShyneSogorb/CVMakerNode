@@ -3,27 +3,50 @@ import fs from "fs";
 import puppeteer from "puppeteer-core";
 
 import path from "path";
-import { GetAllFilesNameOnly } from "./scripts/scripts.js";
+import { GetAllFiles, DataFile } from "./scripts/scripts.js";
 import config from "./config.js";
 
-const variants = (process.argv[2] && process.argv[2] != "all") ? [process.argv[2]] : GetAllFilesNameOnly("./data/");
+const variants = (process.argv[2] && process.argv[2] != "all") ? [process.argv[2]] : GetAllFiles("./data/");
 const save = process.argv[3] || true;
 
 const css = fs.readFileSync("./styles/style.css", "utf-8");
 
-variants.forEach(async variant => {
+console.log(variants);
+
+
+const SaveAsync =async (variant)  => {
 
 // 📦 cargar datos
-const dataPath = path.resolve(`./data/${variant}.json`);
+const dataPath = path.resolve(`./data/${variant.Path()}`);
+
+
+if (!fs.existsSync(dataPath)) {
+  console.error(`There is no data valid file "${variant.Lang}"`);
+  
+  return;
+}
+
 const data = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
 
+console.log("Generating " + variant.Path());
+
 // 🎨 renderizar HTML desde EJS
+
+const ejsPath = `./templates/cv.${variant.Lang}.ejs`
+
+if (!fs.existsSync(ejsPath)) {
+  console.error(`There is no valid ejs for language "${variant.Lang}"`);
+  
+  return;
+}
+
 const html = await ejs.renderFile(
-  "./templates/cv.ejs",
+  ejsPath,
   {...data, css}
 );
 
-const GenerateRoute = Extension => `./dist/cv_${variant}.${Extension}`
+
+const GenerateRoute = Extension => `./dist/cv_${variant.Name}.${variant.Lang}.${Extension}`
 
 // 💾 guardar HTML (para debug)
 if (save) {
@@ -35,6 +58,7 @@ const browser = await puppeteer.launch({
   executablePath: config.BrowserPath,
   headless: "new"
 });
+
 
 const page = await browser.newPage();
 
@@ -48,6 +72,19 @@ await page.pdf({
 
 await browser.close();
 
-console.log(`✔ CV generado: cv_${variant}.pdf ${new Date()}`);
+console.log(`✔ CV generado: cv_${variant.Name}.pdf ${new Date()}`);
 
-});
+};
+
+const ListSize = variants.length
+let processed = 0
+const Queue = async (remaining)=>{
+  const variant = remaining.pop()
+  await SaveAsync(variant)
+  console.log(`Processed ${++processed} files of  ${ListSize}`);
+  
+  if(remaining.length > 0)
+    await Queue(remaining)
+}
+//await variants.forEach(async (variant) => {await SaveAsync(variant)});
+await Queue(variants)
