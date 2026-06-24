@@ -2,19 +2,28 @@
 
   "COMMENT":"This holds the structure for the data to generate to improve ats success probability. Feel free to modify tone to match the position",
 
+  "Lang_COMMENT":{
+    "Explanation and instructions":"This should just indicate the language target for the position, also all values in this JSON MUST be in that language",
+    "Options":[
+      "en",
+      "es"
+    ]
+  },
+  "Lang":"",
+
   "name": "Kingsley Shyne Mattis Sogorb",
   "role": "*Something relevant for this position*",
   "email": "shyne2003@gmail.com",
   "location": "Villena, Valencian Community, Spain",
 
   "webpage_COMMENT":{
-    "tool_tip":"If the position is not programming oriented do not include it"
+    "Explanation and instructions":"If the position is not programming oriented do not include it"
   },
   "webpage": "https://shynesogorb.github.io/webpage/",
   "Phone": "+34 664 16 10 72",
   
   "linkedIn_COMMENT":{
-    "tool_tip":"If the position is not programming oriented do not include it"
+    "Explanation and instructions":"If the position is not programming oriented do not include it"
   },
   "linkedIn": "https://linkedin.com/in/kingsley-shyne-mattis-sogorb-a4a898214",
 
@@ -22,9 +31,9 @@
 
   "summary": "*summary optimized for the position*",
   "skills_COMMENT":{
-    "tool_tip":"Add skills relevant to the position and bullet points for the ats.",
+    "Explanation and instructions":"Add skills relevant to the position and bullet points for the ats.",
     "skills_details":{
-      "tool_tip":"use these as idea of my skills and level to determine if is worth it to mention it, or not depending on the role and my info. More can be extracted if needed from experience achivements",
+      "Explanation and instructions":"use these as idea of my skills and level to determine if is worth it to mention it, or not depending on the role and my info. More can be extracted if needed from experience achivements",
       "skills":[
         "Unreal engine. Been working with it since I was 13 back in 2018",
         "C++. Main focused in unreal engine since 2021",
@@ -83,7 +92,22 @@
         "Dog physical-care. Feed, water and medicating dogs at the shelter",
         "Dog mental-care. Know each dog and their behaviour to treate them the best possible way, knowing their like, dislikes, dogs that they befriend and how they like and not to play",
         "Dog training. Mentally help dogs with some training to better understand humans and better express themselves, also showing teaching them there are humans that will love them",
-        "Cleaning and desinfecting. Cleaning dog wastes from each cage and yard. Also desinfecting me and my tools after cleaning a cage of a sick dog"
+        "Cleaning and desinfecting. Cleaning dog wastes from each cage and yard. Also desinfecting me and my tools after cleaning a cage of a sick dog",
+        "Story building with many short tales I used to write and the newest in progrest novel"
+      ],
+      "knowledge_COMMENT":"These are things I know exist and comprehend in greater or lower level, but have not work with it",
+      "knowledge":[
+        "Lock Mutex",
+        "Data race conditions",
+        "Cache lines",
+        "Memory containers, arrays, linked list, HashSet, HashMap, queue, dequeue, circular array, stack",
+        "GUID",
+        "Frontend",
+        "Backend",
+        "Databases",
+        "API rest",
+        "Server and client side rendering",
+        "Low level programming like C"
       ]
     }
   },
@@ -92,13 +116,13 @@
   ],
 
   "achivements_COMMENT":{
-    "tool_tip":"This will be just information to extract and insert into the points as an array of strings of the said position",
+    "Explanation and instructions":"This will be just information to extract and insert into the points as an array of strings of the said position",
     "achivements":[
     ]
   },
 
   "projects_COMMENT":{
-    "tool_tip":"These are things I've made with no proffit in mind either for me or for test. Experience can be added here if may feel better for the position (e.g. they dont want much experience but rather people that do things and can demonstrate but not experience per-se). This is optional and can be removed if only removes points for irrelevance"
+    "Explanation and instructions":"These are things I've made with no proffit in mind either for me or for test. Experience can be added here if may feel better for the position (e.g. they dont want much experience but rather people that do things and can demonstrate but not experience per-se). This is optional and can be removed if only removes points for irrelevance"
   },
   "projects":[
     {
@@ -115,7 +139,7 @@
   ],
 
   "experience_COMMENT":{
-    "tool_tip":"Experience relevant to the position. Skip not relevant and prioritize best matches. For example, for a cleaning position all progamming experience is noise that removes me points. As well as a programming position the dog-care-taker is noise. In more general programming maybe may be more focus of the technicall achivements ina a more generic way than giving relevance to the fact the programing was videogame oriented",
+    "Explanation and instructions":"Experience relevant to the position. Skip not relevant and prioritize best matches. For example, for a cleaning position all progamming experience is noise that removes me points. As well as a programming position the dog-care-taker is noise. In more general programming maybe may be more focus of the technicall achivements ina a more generic way than giving relevance to the fact the programing was videogame oriented",
     "company": "Can be personal projects, or at an indie team \"Avtrix games\" where i did not get paid and worked only with a designer. Or Develish where i was as Intern",
     "points": "Focus on the most relevant points for the position and try to match as many keywords as possible"
   },
@@ -215,23 +239,36 @@
 
   ],
   "Education_COMMENT":{
-    "tool_tip": "Done in spain and may not have direct equivalent internationally but must still be reflected",
+    "Explanation and instructions": "Done in spain and may not have direct equivalent internationally but must still be reflected",
     "options":[
       "Curso de especialización",
       "Formación profesional de grado superior",
       "Formación profesional de grado medio"
-    ]
+    ],
+    "achivements":"This are not achievement but more like a list of events during my education. This should be removed in most applications since college usually is not as relevant as profesional experience"
   },
   "Education": [
     {
       "School": "IES Poeta Paco Mollà",
       "Degree": "Specialization",
-      "Major": "Game Development And Virtual Reality"
+      "Major": "Game Development And Virtual Reality",
+      "achivement":[
+        "Multiple games tests in unity",
+        "Brick breaker game with power-ups and procedural levels",
+        "Turn base game with smart AI choosing actions based on action queries scores",
+        "Collabed in a bigger turn base game with different army tropes. Such archer, knights, spear-men and others with big shields",
+        "Created tools for designers, reviewed code, helped fixing bugs and pointed towards more efficient or realiable aproaches"
+      ]
     },
     {
       "School": "IES Hermanos Amorós",
       "Degree": "Higher National Diploma",
-      "Major": "Web Application Development"
+      "Major": "Web Application Development",
+      "achivement":[
+        "Local webpage for a restaurant, with online reservation and capacity. With database for the menu",
+        "Local webpage for a game company to showcase their games,from the database, redirect to steam page for those games, wishlist and No-Mysql for games worlds data",
+        "Design and implementation of many real life databases requests, going from the written requirements to the relation chart, database set up and queries execution"
+      ]
     },
     {
       "School": "IES Hermanos Amorós",
@@ -240,7 +277,7 @@
     }
   ],
   "Languages_COMMENT":{
-    "tool_tip":"Technically I speak valencian, not catalan so for positions out of spain should use Catalan, inside spain, Valencian"
+    "Explanation and instructions":"Technically I speak valencian, not catalan so for positions out of spain should use Catalan, inside spain, Valencian"
   },
   "Languages": [
     { "Lang": "Spanish", "Level": "Native" },
@@ -250,7 +287,7 @@
     { "Lang": "Polish", "Level": "Basic" }
   ],
   "More_COMMENT":{
-    "tool_tip":"If the position may come handy something special, like game development where creativity is handy or may like a swordman for sword game."
+    "Explanation and instructions":"If the position may come handy something special, like game development where creativity is handy or may like a swordman for sword game."
   },
   "More": [
     "Volunteer dog caretaker and trainer, fostering responsibility, patience, and teamwork.",
